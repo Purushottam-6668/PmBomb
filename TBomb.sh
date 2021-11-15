@@ -27,21 +27,21 @@ banner() {
     clear
     echo -e "\e[1;31m"
     if ! [ -x "$(command -v figlet)" ]; then
-        echo 'Introducing TBomb'
+        echo 'Introducing PmBomb'
     else
         figlet TBomb
     fi
     if ! [ -x "$(command -v toilet)" ]; then
-        echo -e "\e[4;34m This Bomber Was Created By \e[1;32mSpeedX \e[0m"
+        echo -e "\e[4;34m This Bomber Was Created By \e[1;32mPurushottam \e[0m"
     else
         echo -e "\e[1;34mCreated By \e[1;34m"
         toilet -f mono12 -F border SpeedX
     fi
     echo -e "\e[1;34m For Any Queries Join Me!!!\e[0m"
-    echo -e "\e[1;32m           Telegram: https://t.me/TBombChat \e[0m"
-    echo -e "\e[4;32m   YouTube: https://www.youtube.com/c/SpeedXTech \e[0m"
+    echo -e "\e[1;32m           Telegram: https://t.me/Purushottam_6668 \e[0m"
+    echo -e "\e[4;32m   instagram: instagram.com/Purushottam_6668 \e[0m"
     echo " "
-    echo "NOTE: Kindly move to the PIP version Of TBomb for more stability."
+    echo "NOTE: Kindly move to the PIP version Of PmBomb for more stability."
     echo " "
 }
 
@@ -108,7 +108,7 @@ do
     echo -e "\e[4;31m Please Read Instruction Carefully !!! \e[0m"
     echo " "
     echo "Press 1 To  Start SMS  Bomber "
-    echo "Press 2 To  Start CALL Bomber "
+    echo "Press 2 To  Start CALL Bomber (Do Not Use Now it will updated soon.."
     echo "Press 3 To  Start MAIL Bomber (Not Yet Available)"
     echo "Press 4 To  Update (Works On Linux And Linux Emulators) "
     echo "Press 5 To  Exit "
@@ -127,7 +127,7 @@ do
         echo -e "\e[1;34m Downloading Latest Files..."
         rm -f .update
         $PYTHON bomber.py --update
-        echo -e "\e[1;34m RUN TBomb Again..."
+        echo -e "\e[1;34m RUN PmBomb Again..."
         pause
         exit
     elif [ $ch -eq 5 ];then
