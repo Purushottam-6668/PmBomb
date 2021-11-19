@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/TheSpeedX/TBomb"><img src="https://i.ibb.co/F4HBKqm/TBomb.png" alt="TBomb"></a>
+  <a href="https://github.com/Purushottam-6668/PmBomb"><img src="https://giphy.com/gifs/lifetimetv-watchingyou-youonlifetime-vwFajzEZjcuqqDE9iJ" alt="PmBomb"></a>
   <br>
-  TBomb v2.1b
+  PmBomb v2.1b
   <br>
 </h1>
 
@@ -18,7 +18,7 @@
 - The application requires active internet connection to contact the APIs
 - You would not be charged for any SMS/calls dispatched as a consequence of this script
 - For best performance, use single thread with considerable delay time
-- Always ensure that you are using the latest version of TBomb and have Python 3
+- Always ensure that you are using the latest version of PmBomb and have Python 3
 - This application must not be used to cause harm/discomfort/trouble to others
 - By using this, you agree that you cannot hold the contributors responsible for any misuse
 
@@ -54,15 +54,15 @@ Before continuing make sure following requirements are satisfied:
 - Python version greater than or equal to 3.4 is installed
 - pip is installed for Python 3
 
-Install `tbomb` package by running:
+Install `PmBomb` package by running:
 
 ```shell script
-pip3 install tbomb
+pip3 install PmBomb
 ```
 
-Run TBomb by just typing:
+Run PmBomb by just typing:
 ```shell script
-tbomb
+PmBomb
 ```
 
 ### Install from GIT
@@ -71,9 +71,9 @@ tbomb
 
 Git installation methods are not universal and are likely to differ between distributions so installing Git as per the given instructions below may not work. Please check out how to install Git for your Linux distribution [here](https://git-scm.com/). Commands below provide instructions for Debian-based systems.
 
->Running `TBomb.sh` as sudo miscofigures files ownership. It is recommended not to run it as sudo
+>Running `PmBomb.sh` as sudo miscofigures files ownership. It is recommended not to run it as sudo
 
-Run these commands to clone and run TBomb.
+Run these commands to clone and run PmBomb.
 
 #### For Termux
 
@@ -81,9 +81,9 @@ To use the bomber type the following commands in Termux:
 ```shell script
 pkg install git -y 
 pkg install python -y 
-git clone https://github.com/TheSpeedX/TBomb.git
-cd TBomb
-./TBomb.sh
+git clone https://github.com/Purushottam-6668/PmBomb.git
+cd PmBomb
+./PmBomb.sh
 ```
 
 #### For iSH
@@ -95,11 +95,11 @@ apk add python3
 apk add py3-pip
 apk add ruby
 gem install toilet
-git clone https://github.com/TheSpeedX/TBomb.git
-cd TBomb
+git clone https://github.com/Purushottam-6668/PmBomb.git
+cd PmBomb
 pip3 install -r requirements.txt
-chmod +x TBomb.sh
-./TBomb.sh
+chmod +x PmBomb.sh
+./PmBomb.sh
 ```
 
 #### For Debian-based GNU/Linux distributions
@@ -107,9 +107,9 @@ chmod +x TBomb.sh
 To use the application, type in the following commands in GNU/Linux terminal.
 ```shell script
 sudo apt install git
-git clone https://github.com/TheSpeedX/TBomb.git
-cd TBomb
-bash TBomb.sh
+git clone https://github.com/Purushottam-6668/PmBomb.git
+cd PmBomb
+bash PmBomb.sh
 ```
 
 #### For MacOS
@@ -129,15 +129,15 @@ brew install git
 brew install python3
 sudo easy_install pip
 sudo pip install --upgrade pip
-git clone https://github.com/TheSpeedX/TBomb.git
-cd TBomb
-bash TBomb.sh
+git clone https://github.com/Purushottam-6668/PmBomb.git
+cd PmBomb
+bash PmBomb.sh
 ```
 
 
 ##### Missing Tools on MacOS
 
-The package `toilet` cannot be installed yet on macOS. But TBomb does still work.
+The package `toilet` cannot be installed yet on macOS. But PmBomb does still work.
 
 ### Demonstrative Video:
 
@@ -168,9 +168,9 @@ The package `toilet` cannot be installed yet on macOS. But TBomb does still work
 
 ## FAQ
 
-**Q:** Is there any TBomb Website/App ?
+**Q:** Is there any PmBomb Website/App ?
 
-**A:** There is no official website/app yet.The only official releases of TBomb are published in [Github](https://github.com/TheSpeedX/TBomb) and [PyPi](https://pypi.org/project/tbomb)
+**A:** There is no official website/app yet.The only official releases of PmBomb are published in [Github](https://github.com/Purushottam-6668/PmBomb) and [PyPi](https://pypi.org/project/PmBomb)
 ##
 **Q:** Poor Internet Connection Detected:
 
@@ -190,29 +190,29 @@ The package `toilet` cannot be installed yet on macOS. But TBomb does still work
 ##
 **Q:** Why is the limit so low?
 
-**A:** Due the amount of requests, the APIs can die. To prevent a bigger outtake of TBomb, it has been limited. 
+**A:** Due the amount of requests, the APIs can die. To prevent a bigger outtake of PmBomb, it has been limited. 
 ##
 **Q:** Help, I got the error that the requirements aren't installed, even when the installer has successfully reached the main menu
 
 **A:** First, make sure `python3` and `pip3` are installed. 
 - The Easy Method:  
-   `pip3 install tbomb`  
-    Then execute by simply running `tbomb`
+   `pip3 install PmBomb`  
+    Then execute by simply running `PmBomb`
 - The Git Method:  
-    Clone the repo and Switch to the TBomb Directory and execute this command:  
+    Clone the repo and Switch to the PmBomb Directory and execute this command:  
     `pip3 install -r requirements.txt`
 ##
-**Q:** Help, It says `command 'tbomb' not found` after installing PIP version!
+**Q:** Help, It says `command 'PmBomb' not found` after installing PIP version!
 
-**A:** Try running `sudo pip3 install tbomb`
+**A:** Try running `sudo pip3 install PmBomb`
 ##
-**Q:** Help, I can't execute TBomb.sh!
+**Q:** Help, I can't execute PmBomb.sh!
 
-**A:** Run TBomb Directly with `python3 bomber.py`
+**A:** Run PmBomb Directly with `python3 bomber.py`
 ##
 **Q:** Should I use VPN? 
 
-**A:** No, If you are facing high fail rate as TBomb can fail due the high response time or API restrictions.
+**A:** No, If you are facing high fail rate as PmBomb can fail due the high response time or API restrictions.
 ##
 **Q:** How to get protection ?
 
@@ -224,7 +224,7 @@ The package `toilet` cannot be installed yet on macOS. But TBomb does still work
 ##
 ### Support
 
-For Queries: [Telegram Group](https://t.me/TBombChat)  
+For Queries: [Telegram Group](https://t.me/Purushottam_6668)  
 Contributions, issues, and feature requests are welcome!  
 Give a ★ if you like this project!
 
