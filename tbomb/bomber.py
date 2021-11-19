@@ -54,15 +54,10 @@ def clr():
 def bann_text():
     clr()
     logo = """
-   ████████ █████                 ██
-   ▒▒▒██▒▒▒ ██▒▒██                ██
-      ██    ██  ██        ██   ██ ██
-      ██    █████▒  ████  ███ ███ █████
-      ██    ██▒▒██ ██  ██ ██▒█▒██ ██▒▒██
-      ██    ██  ██ ██  ██ ██ ▒ ██ ██  ██
-      ██    █████▒ ▒████▒ ██   ██ █████▒
-      ▒▒    ▒▒▒▒▒   ▒▒▒▒  ▒▒   ▒▒ ▒▒▒▒▒
-                                         """
+▒█▀▀█ ▒█▀▄▀█ ░░ ▒█▀▀█ ▒█▀▀▀█ ▒█▀▄▀█ ▒█▀▀█ 
+▒█▄▄█ ▒█▒█▒█ ▀▀ ▒█▀▀▄ ▒█░░▒█ ▒█▒█▒█ ▒█▀▀▄ 
+▒█░░░ ▒█░░▒█ ░░ ▒█▄▄█ ▒█▄▄▄█ ▒█░░▒█ ▒█▄▄█
+   """
     if ASCII_MODE:
         logo = ""
     version = "Version: "+__VERSION__
@@ -93,7 +88,7 @@ def do_pip_update():
     try:
         print(ALL_COLORS[0]+"UPDATING "+RESET_ALL, end='')
         subprocess.check_call(
-            [sys.executable, "-m", "pip", "install", "-U", "tbomb"],
+            [sys.executable, "-m", "pip", "install", "-U", "PmBomb"],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT)
         success = True
@@ -101,11 +96,11 @@ def do_pip_update():
         success = False
     print("\n")
     if success:
-        mesgdcrt.SuccessMessage("TBomb was updated to the latest version")
+        mesgdcrt.SuccessMessage("PmBomb was updated to the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update TBomb.")
+        mesgdcrt.FailureMessage("Unable to update PmBomb.")
         mesgdcrt.WarningMessage(
-            "Update TBomb by running: pip3 install -U tbomb")
+            "Update PmBomb by running: pip3 install -U PmBomb")
 
     sys.exit()
 
@@ -117,21 +112,21 @@ def update():
 def check_for_updates():
     mesgdcrt.SectionMessage("Checking for updates")
     fver = requests.get(
-        "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/.version"
+        "https://raw.githubusercontent.com/Purushottam-6668/PmBomb/master/.version"
     ).text.strip()
     if fver != __VERSION__:
         mesgdcrt.WarningMessage("An update is available")
         mesgdcrt.GeneralMessage("Starting update...")
         update()
     else:
-        mesgdcrt.SuccessMessage("TBomb is up-to-date")
-        mesgdcrt.GeneralMessage("Starting TBomb")
+        mesgdcrt.SuccessMessage("PmBomb is up-to-date")
+        mesgdcrt.GeneralMessage("Starting PmBomb")
 
 
 def notifyen():
     try:
         noti = requests.get(
-            "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/.notify"
+            "https://raw.githubusercontent.com/Purushottam-6668/PmBomb/master/.notify"
         ).text.upper()
         if len(noti) > 10:
             mesgdcrt.SectionMessage("NOTIFICATION: " + noti)
@@ -185,7 +180,7 @@ def pretty_print(cc, target, success, failed):
     mesgdcrt.GeneralMessage("Failed       : " + str(failed))
     mesgdcrt.WarningMessage(
         "This tool was made for fun and research purposes only")
-    mesgdcrt.SuccessMessage("TBomb was created by SpeedX")
+    mesgdcrt.SuccessMessage("PmBomb was created by Purushottam-6668")
 
 
 def workernode(mode, cc, target, count, delay, max_threads):
@@ -305,7 +300,7 @@ def selectnode(mode="sms"):
 
 mesgdcrt = MessageDecorator("icon")
 if sys.version_info[0] != 3:
-    mesgdcrt.FailureMessage("TBomb will work only in Python v3")
+    mesgdcrt.FailureMessage("PmBomb will work only in Python v3")
     sys.exit()
 
 try:
@@ -314,7 +309,7 @@ except FileNotFoundError:
     update()
 
 __VERSION__ = get_version()
-__CONTRIBUTORS__ = ['SpeedX', 't0xic0der', 'scpketer', 'Stefan']
+__CONTRIBUTORS__ = ['Purushottam-6668', 't0xic0der', 'scpketer', 'Stefan']
 
 ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
               Fore.MAGENTA, Fore.CYAN, Fore.WHITE]
@@ -322,36 +317,36 @@ RESET_ALL = Style.RESET_ALL
 
 ASCII_MODE = False
 
-description = """TBomb - Your Friendly Spammer Application
+description = """PmBomb - Your Friendly Spammer Application
 
-TBomb can be used for many purposes which incudes -
+PmBomb can be used for many purposes which incudes -
 \t Exposing the vulnerable APIs over Internet
 \t Friendly Spamming
 \t Testing Your Spam Detector and more ....
 
-TBomb is not intented for malicious uses.
+PmBomb is not intented for malicious uses.
 """
 
 
 def main():
     global ASCII_MODE, mesgdcrt
-    parser = argparse.ArgumentParser(prog="tbomb",
+    parser = argparse.ArgumentParser(prog="PmBomb",
                                      description=description,
-                                     epilog='Coded by SpeedX !!!')
+                                     epilog='Coded by Purushottam-6668 !!!')
     parser.add_argument("-sms", "--sms", action="store_true",
-                        help="start TBomb with SMS Bomb mode")
+                        help="start PmBomb with SMS Bomb mode")
     parser.add_argument("-call", "--call", action="store_true",
-                        help="start TBomb with CALL Bomb mode")
+                        help="start PmBomb with CALL Bomb mode")
     parser.add_argument("-mail", "--mail", action="store_true",
-                        help="start TBomb with MAIL Bomb mode")
+                        help="start PmBomb with MAIL Bomb mode")
     parser.add_argument("-ascii", "--ascii", action="store_true",
                         help="show only characters of standard ASCII set")
     parser.add_argument("-u", "--update", action="store_true",
-                        help="update TBomb")
+                        help="update PmBomb")
     parser.add_argument("-c", "--contributors", action="store_true",
-                        help="show current TBomb contributors")
+                        help="show current PmBomb contributors")
     parser.add_argument("-v", "--version", action="store_true",
-                        help="show current TBomb version")
+                        help="show current PmBomb version")
     args = parser.parse_args()
     if args.ascii:
         ASCII_MODE = True
